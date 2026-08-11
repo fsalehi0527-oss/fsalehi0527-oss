@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <style>
+        /* Base Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #ffffff;
+            padding: 4rem 2rem;
+        }
+
+        .features-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            padding: 2rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">BrandName</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Build your next big idea</h1>
+            <p>A simple, modern responsive HTML/CSS template to jumpstart your project setup.</p>
+            <a href="#features" class="btn">Get Started</a>
+        </section>
+
+        <section id="features" class="features">
+            <div class="features-container">
+                <div class="card">
+                    <h3>Responsive Grid</h3>
+                    <p>Adapts cleanly across mobile, tablet, and desktop viewports using CSS Grid.</p>
+                </div>
+                <div class="card">
+                    <h3>Clean Design</h3>
+                    <p>Uses standard, minimal typography and subtle borders for a modern look.</p>
+                </div>
+                <div class="card">
+                    <h3>Zero Dependencies</h3>
+                    <p>Pure HTML and CSS—no external libraries or heavy JavaScript required.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BrandName. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
